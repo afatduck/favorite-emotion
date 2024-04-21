@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./512.png" type="image/png">
+    <title>My Favorite Emotion</title>
+</head>
+<body>
+    <canvas></canvas>
+
+    <div class="emotion-details">
+        <h3>My Favorite Emotion</h3>
+
+        <div class="line">
+            <div>
+                <p>Power</p>
+                <p>The intensity of the emotion</p>
+            </div>
+            <span>1/5</span>
+        </div>
+        <input type="range" name="power" min="1" max="5" id="power-input">
+
+        <div class="line">
+            <div>
+                <p>Defense</p>
+                <p>How long emotion the lasts</p>
+            </div>
+            <span>1/5</span>
+        </div>
+        <input type="range" name="defense" min="1" max="5" id="defense-input">
+
+        <div class="line">
+            <div>
+                <p>Frequency</p>
+                <p>How often is the emotion felt</p>
+            </div>
+            <span>1/5</span>
+        </div>
+        <input type="range" name="frequency" min="1" max="5" id="frequency-input">
+
+        <div class="line">
+            <div>
+                <p>Growth</p>
+                <p>The context in which the emotion occurs</p>
+            </div>
+            <span>1/5</span>
+        </div>
+        <input type="range" name="growth" min="1" max="5" id="growth-input">
+
+        <div class="emotion-list">
+            <div class="list">
+
+            </div>
+            <div class="add-remove">
+                <input type="text" id="new-emotion" placeholder="Emotion name">
+                <div>
+                    <button id="add-emotion">Add</button>
+                    <button id="remove-emotion">Remove</button>
+                </div>
+                <button id="default-emotions">Default Emotions</button>
+            </div>
+        </div>        
+    </div>
+
+    <div class="simulation-stats"></div>
+
+    <div class="controls">
+        <button id="play-pause">Start</button>
+        <button id="reset">Reset</button>
+    </div>
+
+    <div class="phone-overlay hidden"></div>
+
+    <button id="hide-gui">Close</button>
+
+    <script defer src="./bundle.js"></script>
+</body>
+</html>
